@@ -1,0 +1,36 @@
+.cntemj {
+  width: 40%;
+  display: flex;
+  border: 1px solid #1abc9c;
+  border-radius: 1em;
+  margin: 0.5em;
+  padding: 0.5em;
+}
+.cntemj:hover {
+  background-color: #34495e;
+}
+
+.cntinner {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+.emojiBox {
+  width: 50px;
+  text-align: center;
+  align-items: center;
+  display: flex;
+  font-size: 30px;
+}
+.title {
+  font-size: 24px;
+  color: #ecf0f1;
+  margin: 0.2em;
+}
+.keywords {
+  font-size: 12px;
+  color: #95a5a6;
+  margin: 0.2em;
+}

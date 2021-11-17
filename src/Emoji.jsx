@@ -1,6 +1,7 @@
 import React,{useState} from 'react'
+import EmojiItem from './EmojiItem'
 import emojilist from './emojiList.json'
-
+import "./Emoji.css"
 export default function Emoji() {
   
   const[emoji,setEmoji] = useState("")
@@ -10,13 +11,11 @@ export default function Emoji() {
   }
 
   return (
-    <div>
-      <input onChange={(event)=>setEmoji(event.target.value)} type="text" value={emoji} />
+    <div className="cnt">
+      <input onChange={(event)=>setEmoji(event.target.value)} className="input" type="text" value={emoji} />
       {emojilist.filter(filterEmojies).map((emj) => {
         return (
-          <div>
-            {emj.symbol} {emj.title}
-          </div>
+          <EmojiItem {...emj}/>
         )
       })}
     </div>
