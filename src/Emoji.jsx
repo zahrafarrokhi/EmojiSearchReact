@@ -12,7 +12,7 @@ export default function Emoji() {
 
   return (
     <div className="cnt">
-      <input onChange={(event)=>setEmoji(event.target.value)} className="input" type="text" value={emoji} />
+      <input onChange={(event)=>setEmoji(event.target.value)} placeholder="Search here!!" className="input" type="text" value={emoji} />
       {emojilist.filter(filterEmojies).map((emj) => {
         return (
           <EmojiItem {...emj}/>

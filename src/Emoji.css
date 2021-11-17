@@ -14,11 +14,12 @@
   border-radius: 1em;
   padding: 0.5em;
   font-size: 20px;
-  border: 2px solid #eceff1;
+  border: 2px solid #eceff1 !important;
 }
 
 .input:hover,
-.input:active {
-  border: 2px solid #eceff1;
+.input:active,
+.input:focus {
+  border: 2px solid #eceff1 !important;
   border-radius: 1em;
 }
